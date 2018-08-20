@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<center>
+<nav class="w3-bar w3-black">
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Startside</a>
+<div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Lavet af Gruppe 3 <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="beskrivelse.html" class="w3-bar-item w3-button">Beskrivelse</a>
+	  <a href="billeder.html" class="w3-bar-item w3-button">Billeder</a>
+</nav>
+</center>
+
+
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h1 class="w3-wide">VORES BESKRIVELSE</h1>
+  <p class="w3-opacity"><i></i></p>
+  <p class="w3-justify"></p>
+  <h4><i><b>A. Husets opbygning – beskrivelse af husets konstruktioner, som fundament, vægge, vinduer, døre og tagkonstruktion.</b>
+  Fundamentet til huset er gravet 90 centimeter ned i 
+  jorden. Huset er 170m^2, det vil sige at det er 10x17 m. Murene er lavet af mursten og det er 
+  “RT 417 mocca” mursten som man kan købe inde på randerstegl.dk. Væggene er lavet i gasbeton, gasbeton 
+  finder man blandt andet i XL eller andre byggemarkeder. Døre og vinduer finder man på “vinduesgrossisten.dk”.
+  <h4></i><b>B. Husets VVS-installationer – eksempelvis gulvvarme/radiator og føringsveje rundt i huset til vand, afløb osv.</b> 
+	  I huset har vi gulvvarme og selvfølgelig også kloakker, kloakkerne har i at kostet 5000 kr.
+	  vi har valgt at få installeret solceller på vores hus, og det vil koste cirka 200.000 kr.
+  <h4><i><b>C. Husets el-installationer – føringsveje rundt i bygningen, stikkontakter, spots, lamper osv.</b>
+  Kablerne kører igennem loftet og væggene, de går vandret og lodret. Husets netkabler kører også 
+  igennem væggene og går ind i kontoret og værelserne.
+  <img src="img/el.jpg">
+  <h4></i><b>D. Husets indvendige overflader – herunder gulv, loft og vægoverflader.</b>
+  Rundt omkring i huset bliver der lagt trægulv undtagen på badeværelserne hvor der vil blive lagt fliser. 
+  På væggene kommer der til at være hvid maling og på badeværelset 
+  kommer der til at være fliser. Loftet vil være i træ i hele huset. 
+  <h4><i><b>E. Husets udvendige overflader – herunder facadevægge, gavle, garage og tag.</b>
+  Husets facade 
+  vægge er mursten som man kan finde inde på www.Randerstegl.dk, vi har også valgt at gavlen skal være bygget i 
+  mursten. Tagets tagsten har vi fundet inde på den samme hjemmeside som vi fandt murstenene, vi har valgt nogle tagsten 
+  der er sort glaseret: https://www.randerstegl.dk/dk/tagsten/produkt/rt750-laumans-idealsupra-variabel 
+  Vi har valgt en almindelig tagkonstruktion hvor gavlen er på 30 grader.
+
+  <h4></i>
+  <h4><i>
+  <h4></i>
+</section>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000);
+}
+</script>
+
+
+
+<footer class="w3-container w3-padding-32 w3-center w3-black w3-xlarge">
+  <p class="w3-medium">
+    Lavet af gruppe 3</a>
+  </p>
+</footer>
+
+
+</body>
+</html>
