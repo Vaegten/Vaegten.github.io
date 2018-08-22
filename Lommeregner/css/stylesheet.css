@@ -35,5 +35,11 @@
 			}
 
 			.main{
-				top: 50%;
+				width: 220px;
+				border-radius: 20px;
+				border: 10px solid #566573;
+				padding: 5px;
+				margin: 50px;
+				background-color: #b2babb;
 			}
+			

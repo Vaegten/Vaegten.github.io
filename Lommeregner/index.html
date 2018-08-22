@@ -16,76 +16,77 @@
 		<center>
 			<div class="main" style="">
 				<form name="form">
-					<input class="textview" name="textview" id="text" readonly>
+					<input class="textview" name="textview" id="text1" value="0" autocomplete="off" readonly>
 					<br>
-					<input class="viewtext" name="viewtext" id="text" readonly>
+					<input class="viewtext" name="viewtext" id="text2" readonly>
 					</form>
 					<table>
 						<tr>
 							<td>
-								<input class="button" type="button" value="C" onclick="clean()">
+								<input class="button" type="button" value="C" onclick="clean(); EnableBtn()">
 								</td>
 								<td>
-									<input class="button" type="button" value="<" onclick="back()">
+									<input class="button" type="button" value="&#9003;" onclick="back(); EnableBtn()">
 											</td>
 											<td>
-												<input id="submit_button" class="button" type="button" value="/" onclick="insert2('/')">
+												<input id="Divi" class="button" type="button" value="/" onclick="insert2('/'); DisableBtn()">
 												</td>
 												<td>
-													<input class="button" type="button" value="x" onclick="insert2('*')">
+													<input id="Gange" class="button" type="button" value="x" onclick="insert2('*'); DisableBtn()">
 													</td>
 												</tr>
 												<tr>
 													<td>
-														<input class="button" type="button" value="7" onclick="insert(7)">
+														<input class="button" type="button" value="7" onclick="insert(7); EnableBtn()">
 														</td>
 														<td>
-															<input class="button" type="button" value="8" onclick="insert(8)">
+															<input class="button" type="button" value="8" onclick="insert(8); EnableBtn()">
 															</td>
 															<td>
-																<input class="button" type="button" value="9" onclick="insert(9)">
+																<input class="button" type="button" value="9" onclick="insert(9); EnableBtn()">
 																</td>
 																<td>
-																	<input class="button" type="button" value="-" onclick="insert2('-')">
+																	<input id="Minus" class="button" type="button" value="-" onclick="insert2('-'); DisableBtn()">
 																	</td>
 																</tr>
 																<tr>
 																	<td>
-																		<input class="button" type="button" value="4" onclick="insert(4)">
+																		<input class="button" type="button" value="4" onclick="insert(4); EnableBtn()">
 																		</td>
 																		<td>
-																			<input class="button" type="button" value="5" onclick="insert(5)">
+																			<input class="button" type="button" value="5" onclick="insert(5); EnableBtn()">
 																			</td>
 																			<td>
-																				<input class="button" type="button" value="6" onclick="insert(6)">
+																				<input id="Buttons" class="button" type="button" value="6" onclick="insert(6); EnableBtn()">
 																				</td>
 																				<td>
-																					<input class="button" type="button" value="+" onclick="insert2('+')">
+																					<input id="Plus" class="button" type="button" value="+" onclick="insert2('+'); DisableBtn()">
 																					</td>
 																				</tr>
 																				<tr>
 																					<td>
-																						<input class="button" type="button" value="1" onclick="insert(1)">
+																						<input class="button" type="button" value="1" onclick="insert(1); EnableBtn()">
 																						</td>
 																						<td>
-																							<input class="button" type="button" value="2" onclick="insert(2)">
+																							<input class="button" type="button" value="2" onclick="insert(2); EnableBtn()">
 																							</td>
 																							<td>
-																								<input class="button" type="button" value="3" onclick="insert(3)">
+																								<input class="button" type="button" value="3" onclick="insert(3); EnableBtn()">
 																								</td>
 																								<td rowspan=5>
-																									<input class="button" style="height: 105px;" type="button" value="=" onclick="equal()">
+																									<input class="button" style="height: 105px;" type="button" value="=" onclick="equal(); EnableBtn()">
 																									</td>
 																								</tr>
 																								<tr>
 																									<td colspan=2>
-																										<input class="button" style="width: 105px;" type="button" value="0" onclick="insert(0)">
+																										<input class="button" style="width: 105px;" type="button" value="0" onclick="insert(0); EnableBtn()">
 																										</td>
 																										<td>
-																											<input class="button" type="button" value="." onclick="insert2('.')">
+																											<input class="button" type="button" value="." onclick="insert2('.'); EnableBtn()">
 																											</td>																											
 																										</tr>
 																									</table>
+																									<p style="font-size: 23px; font-family:Script; opacity: 0.7; margin: 2px;">Benjamin's Lommeregner</p>
 																								</div>
 																							</center>
 																						</body>
