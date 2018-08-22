@@ -15,20 +15,23 @@
 				var exp = document.form.textview.value;
 				if(exp){
 					document.form.viewtext.value = eval(exp);
-					document.form.textview.value="";
 					/*Hvis det bliver Infinity så vil den udskrive Fejl! istedet for*/
 					if(eval(exp) === Infinity){
 					document.form.viewtext.value="Fejl!";
 					}
-					
+
 					if(eval(exp) === NaN){
 					document.form.viewtext.value="Fejl!";
 					}
-			
-				}
-				
+
+
+					}
+
 			}
-	
+
+
+
+
 			/*Fjerner alt fra Input og sætter 0 på den øverste*/
 			function clean(){
 				document.form.viewtext.value = "";
@@ -39,8 +42,8 @@
 			function back(){
 				var exp = document.form.textview.value;
 				if(exp === "0"){
-					
-					
+
+
 				}else{
 				document.form.textview.value = exp.substring(0,exp.length-1)
 				}
@@ -66,3 +69,4 @@
 				document.getElementById("Divi").disabled = false;
 				document.getElementById("Gange").disabled = false;
 			}
+
