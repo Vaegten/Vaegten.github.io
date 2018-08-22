@@ -70,3 +70,5 @@
 				document.getElementById("Gange").disabled = false;
 			}
 
+			
+			
